@@ -1,0 +1,64 @@
+.homeMainBlock {
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  margin-top: 111px;
+}
+
+.title {
+  font-family: 'Tomorrow';
+  font-size: 40px;
+  font-weight: 400;
+  max-width: 833px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-family: 'Tomorrow';
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 560px;
+  background: #ffffff;
+  padding: 3px 18px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff99;
+  line-height: 30.2px;
+}
+
+.videoOuter {
+  max-width: 560px;
+  width: 100%;
+  margin: 20px auto;
+  background: linear-gradient(circle, #155456 0%, #1d1d1d 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.videoInner {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.videoInner iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  border: 0;
+  border-radius: 8px;
+}

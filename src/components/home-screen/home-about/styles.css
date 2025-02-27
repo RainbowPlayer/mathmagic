@@ -1,0 +1,85 @@
+.homeAboutContainer {
+  background: radial-gradient(circle, #155456 0%, #1d1d1d 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 50px 0 50px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.homeAboutText {
+  flex: 1;
+  max-width: 485px;
+}
+
+.homeAboutTitle {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20px;
+
+  background: linear-gradient(90deg, #1dcaf6 0%, #08b066 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.homeAboutParagraph {
+  margin-bottom: 15px;
+  color: #ffffff99;
+  line-height: 28.8px;
+}
+
+.homeAboutParagraph:last-child {
+  margin-bottom: 0;
+}
+
+.homeAboutStrong {
+  color: #ffffff;
+}
+
+.homeAboutZombies {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap;  <-- якщо хочете, щоб зображення переходили на новий рядок */
+  gap: 20px;
+  flex: 0 0 auto;
+
+  background: radial-gradient(circle, #174b4a 0%, #0f3434 100%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.homeAboutZombieImage {
+  /* Робимо зображення гнучким */
+  width: 100%;
+  max-width: 300px; /* Можна зменшити або збільшити */
+  height: auto; /* Зберігає пропорції */
+  object-fit: contain; /* За потреби можна використати cover/contain */
+}
+
+@media (max-width: 1130px) {
+  .homeAboutContainer {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 50px 20px 50px 20px;
+  }
+
+  .homeAboutText {
+    max-width: 600px;
+  }
+
+  .homeAboutZombies {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Додатково, якщо хочете ще меншу ширину на дуже вузьких екранах */
+@media (max-width: 600px) {
+  .homeAboutZombieImage {
+    max-width: 110px;
+  }
+}

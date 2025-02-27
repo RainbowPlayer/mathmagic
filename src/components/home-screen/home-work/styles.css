@@ -1,0 +1,191 @@
+.home-work-container {
+  background: radial-gradient(circle, #34103d 0%, #1d1d1d 100%);
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 75px;
+  font-family: Inter;
+}
+
+.home-work-title {
+  font-weight: 700;
+  font-size: 30px;
+  background: linear-gradient(90deg, #8fd6ff 0%, #8a80fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-work-line-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+.home-work-gray-line {
+  position: absolute;
+  top: 12px;
+  left: 6%;
+  width: 88%;
+  height: 10px;
+  background: #ebebeb;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.home-work-steps {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  margin: 0 5%;
+}
+
+.home-work-step {
+  text-align: center;
+  position: relative;
+}
+
+.home-work-step-circle {
+  background: linear-gradient(90deg, #5656b8 0%, #d973ba 100%);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto 8px auto;
+}
+
+.home-work-step-label {
+  position: absolute;
+  top: -40px;
+  left: -20px;
+  width: 70px;
+  font-size: 22px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #8fd6ff 0%, #8a80fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-work-cards {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+}
+
+.home-work-card {
+  flex: 1 1 220px;
+  max-width: 240px;
+}
+
+.home-work-card-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 32px;
+  display: block;
+}
+
+.home-work-card-body {
+  background-color: #262626;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.home-work-card-text {
+  text-align: left;
+  margin: 0;
+  font-weight: 400;
+  color: #f1f1f1;
+}
+
+.home-work-final-text {
+  font-size: 26px;
+  font-weight: 700;
+  max-width: 820px;
+  margin: 0 auto;
+  margin-top: 80px;
+  background: linear-gradient(90deg, #1dcaf6 0%, #08b066 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-work-row {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .home-work-row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    max-width: 500px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .home-work-line-container {
+    position: relative;
+    width: 150%;
+  }
+
+  .home-work-gray-line {
+    position: absolute;
+    top: 1;
+    bottom: 0;
+    left: 7px;
+    width: 10px;
+    height: 93%;
+    background: #ebebeb;
+    transform: rotate(0deg);
+    z-index: 0;
+  }
+
+  .home-work-card-title {
+    margin-right: 5px;
+  }
+
+  .home-work-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    gap: 30px;
+    height: 100%;
+  }
+
+  .home-work-step {
+    position: relative;
+  }
+
+  .home-work-step-circle {
+    margin: 0 0 30px 0;
+  }
+
+  .home-work-step-label {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 70px;
+  }
+
+  .home-work-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    gap: 20px;
+  }
+
+  .home-work-card {
+    max-width: 100%;
+  }
+}
