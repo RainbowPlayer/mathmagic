@@ -27,8 +27,26 @@ const HomeHeader = () => {
   return (
     <div className="home-header" style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="home-header-content">
-        {isMobile ? <span> +19725561596</span> : <span>Phone: +19725561596</span>}
-        {isMobile ? <span>admin@bristar.studio</span> : <span>Email: admin@bristar.studio</span>}
+        {isMobile ? (
+          <>
+            <span>
+              <a style={{color: 'white', textDecoration: 'none'}} href="tel:+19725561596">+19725561596</a>
+            </span>
+            <span>
+              <a style={{color: 'white', textDecoration: 'none'}} href="mailto:admin@bristar.studio">admin@bristar.studio</a>
+            </span>
+          </>
+        ) : (
+          <>
+            <span>
+              Phone: <a style={{color: 'white', textDecoration: 'none'}} href="tel:+19725561596">+19725561596</a>
+            </span>
+            <span>
+              Email: <a style={{color: 'white', textDecoration: 'none'}} href="mailto:admin@bristar.studio">admin@bristar.studio</a>
+            </span>
+          </>
+        )}
+
         {!isMobile && (
           <button className="home-header-button">
             Download <ArrowIcon />

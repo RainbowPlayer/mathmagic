@@ -7,6 +7,7 @@
   text-align: center;
   gap: 40px;
   margin-top: 111px;
+  
 }
 
 .title {
@@ -16,6 +17,8 @@
   max-width: 833px;
   text-transform: uppercase;
   color: #ffffff;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .subtitle {
@@ -34,6 +37,8 @@
   font-size: 18px;
   color: #ffffff99;
   line-height: 30.2px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .videoOuter {

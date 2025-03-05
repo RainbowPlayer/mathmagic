@@ -43,7 +43,6 @@
 .homeAboutZombies {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap;  <-- якщо хочете, щоб зображення переходили на новий рядок */
   gap: 20px;
   flex: 0 0 auto;
 
@@ -53,11 +52,10 @@
 }
 
 .homeAboutZombieImage {
-  /* Робимо зображення гнучким */
   width: 100%;
-  max-width: 300px; /* Можна зменшити або збільшити */
-  height: auto; /* Зберігає пропорції */
-  object-fit: contain; /* За потреби можна використати cover/contain */
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
 }
 
 @media (max-width: 1130px) {
@@ -73,11 +71,11 @@
 
   .homeAboutZombies {
     width: 100%;
+    gap: 70px;
     justify-content: center;
   }
 }
 
-/* Додатково, якщо хочете ще меншу ширину на дуже вузьких екранах */
 @media (max-width: 600px) {
   .homeAboutZombieImage {
     max-width: 110px;
