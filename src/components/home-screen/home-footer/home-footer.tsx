@@ -45,25 +45,11 @@ const HomeFooter = () => {
       </div>
 
       <div className="home-footer-right">
-        <input
-          type="text"
-          placeholder="Name"
-          className="home-footer-input"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          className="home-footer-input"
-        />
-        <input
-          type="text"
-          placeholder="Phone"
-          className="home-footer-input"
-        />
+        <input type="text" placeholder="Name" className="home-footer-input" />
+        <input type="email" placeholder="Email" className="home-footer-input" />
+        <input type="text" placeholder="Phone" className="home-footer-input" />
 
-        <button className="home-footer-button">
-          Contact Us
-        </button>
+        <button className="home-footer-button">Contact Us</button>
       </div>
     </div>
   );

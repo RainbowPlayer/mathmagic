@@ -30,19 +30,41 @@ const HomeHeader = () => {
         {isMobile ? (
           <>
             <span>
-              <a style={{color: 'white', textDecoration: 'none'}} href="tel:+19725561596">+19725561596</a>
+              <a
+                style={{ color: 'white', textDecoration: 'none' }}
+                href="tel:+19725561596"
+              >
+                +19725561596
+              </a>
             </span>
             <span>
-              <a style={{color: 'white', textDecoration: 'none'}} href="mailto:admin@bristar.studio">admin@bristar.studio</a>
+              <a
+                style={{ color: 'white', textDecoration: 'none' }}
+                href="mailto:admin@bristar.studio"
+              >
+                admin@bristar.studio
+              </a>
             </span>
           </>
         ) : (
           <>
             <span>
-              Phone: <a style={{color: 'white', textDecoration: 'none'}} href="tel:+19725561596">+19725561596</a>
+              Phone:{' '}
+              <a
+                style={{ color: 'white', textDecoration: 'none' }}
+                href="tel:+19725561596"
+              >
+                +19725561596
+              </a>
             </span>
             <span>
-              Email: <a style={{color: 'white', textDecoration: 'none'}} href="mailto:admin@bristar.studio">admin@bristar.studio</a>
+              Email:{' '}
+              <a
+                style={{ color: 'white', textDecoration: 'none' }}
+                href="mailto:admin@bristar.studio"
+              >
+                admin@bristar.studio
+              </a>
             </span>
           </>
         )}

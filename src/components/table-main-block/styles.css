@@ -1,0 +1,89 @@
+.table-container {
+  padding: 20px;
+  color: #fff;
+  border-radius: 4px;
+  max-width: 825px;
+  margin: 0 auto;
+}
+
+.table-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  margin-bottom: 50px;
+}
+
+.table-title {
+  font-family: 'Tomorrow', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background: #fcfcfc;
+  align-items: center;
+  max-width: 350px;
+  width: 100%;
+  padding: 3px;
+}
+
+.timer-text {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.score-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.score-table col.col-25 {
+  width: 25%;
+}
+.score-table col.col-50 {
+  width: 50%;
+}
+
+.score-table thead tr {
+  background: linear-gradient(to right, #1ec9f2, #0db16a);
+}
+.score-table thead th {
+  color: #fff;
+  padding: 10px;
+  border: none;
+  background: none;
+}
+.score-table thead th:first-child {
+  border-top-left-radius: 8px;
+}
+.score-table thead th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.score-table tbody tr {
+  background-color: #2d595c;
+  box-shadow:
+    0 32px 160px -0.5px rgba(0, 0, 0, 0.467),
+    0 14.56px 36.62px 3.86px rgba(0, 0, 0, 0.243),
+    0 7.32px 19.32px -3.86px rgba(0, 0, 0, 0.15),
+    0 1.93px 9.64px -0.17px rgba(0, 0, 0, 0.08),
+    0 0.75px 2.77px -0.17px rgba(0, 0, 0, 0.06);
+}
+.score-table tbody td {
+  background: none;
+  border: 3px solid #301337;
+  padding: 10px;
+}
