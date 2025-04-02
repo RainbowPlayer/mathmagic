@@ -57,7 +57,7 @@ export const timer = {
                 }
             }
             for (let i = 0; i < this.tournaments.length; i++) {
-                uwg.findContainers({ payload__type: 111, perm: 'PUBLIC_SERVER_SIDE_ONLY', payload__value__tournament_uuid: this.tournaments[i].uuid, ordering: '-payload.value.score', offset: 0, limit: 20 }, scores => {
+                uwg.findContainers({ payload__type: 111, perm: 'PUBLIC_SERVER_SIDE_ONLY', payload__value__tournament_uuid: this.tournaments[i].uuid, ordering: '-payload.value.score', offset: 0, limit: 100 }, scores => {
                     if (scores.total > 0) {
                         for (let ii = 0; ii < scores.containers.length; ii++) {
                             this.tournaments[i].table.push({
