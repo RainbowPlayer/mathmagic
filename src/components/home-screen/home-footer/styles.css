@@ -40,6 +40,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
 .home-footer-icon {
@@ -70,9 +71,20 @@
   outline: none;
   font-size: 14px;
   background-color: #ebebeb;
+  color: #000000;
+}
+.home-footer-input:disabled {
   color: #0000004d;
 }
-
+.home-form-error {
+  font-size:13px;
+  color:#f13131;
+  background:#dfd154;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width:90%;
+  margin: -8px 0 0 0;
+}
 .home-footer-button {
   background-color: #ffffff1a;
   color: #ffffff;

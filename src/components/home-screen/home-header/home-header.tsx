@@ -24,6 +24,29 @@ const HomeHeader = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  function detectApple() {
+    return /(Mac|iPhone|iPod|iPad)/i.test(navigator.userAgent)
+  }
+  function detectAndroid() {
+    return /(android)/i.test(navigator.userAgent)
+  }
+  function detectWindows() {
+    return /(Win)/i.test(navigator.userAgent)
+  }
+
+  function Download() {
+    if (detectApple()) {
+        window.open('https://apps.apple.com/app/apple-store/id6467421035?pt=126580370&ct=mmlanding&mt=8')
+    } else if (detectAndroid()) {
+        window.open('https://play.google.com/store/apps/details?id=com.Bristar.MathMagic&referrer=utm_source%3Dmmlanding')
+    } else if (detectWindows()) {
+        document.location = 'https://ugs3experiment.bristar.studio/builds/mathmagic.exe'
+    } else {
+        let siteRef = 'https://bristar.studio/en/games/heroes-of-math-and-magic'
+        window.open(siteRef + '?utm_source=mmlanding')
+    }
+  }
+
   return (
     <div className="home-header" style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="home-header-content">
@@ -70,7 +93,7 @@ const HomeHeader = () => {
         )}
 
         {!isMobile && (
-          <button className="home-header-button">
+          <button className="home-header-button" onClick={() => Download()}>
             Download <ArrowIcon />
           </button>
         )}
