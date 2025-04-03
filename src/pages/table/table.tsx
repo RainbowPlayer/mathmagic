@@ -5,6 +5,7 @@ import './styles.css';
 const Table = () => {
   return (
     <div className="tableContainer">
+      <meta name="description" content="Tournament results and ratings" />
       <HomeHeader />
       <TableMainBlock />
     </div>
