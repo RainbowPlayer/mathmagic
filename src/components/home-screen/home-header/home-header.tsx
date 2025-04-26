@@ -19,13 +19,18 @@ const HomeHeader = () => {
     };
 
     handleResize();
-
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
-    <div className="home-header" style={{ backgroundImage: `url(${bgImage})` }}>
+    <div
+      className="home-header"
+      style={{
+        position: 'relative',
+        backgroundImage: `url(${bgImage})`,
+      }}
+    >
       <div className="home-header-content">
         {isMobile ? (
           <>
@@ -75,6 +80,20 @@ const HomeHeader = () => {
           </button>
         )}
       </div>
+
+      {isMobile && (
+        <button
+          className="home-header-button"
+          style={{
+            position: 'absolute',
+            bottom: '16px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+          }}
+        >
+          Download <ArrowIcon />
+        </button>
+      )}
     </div>
   );
 };

@@ -74,18 +74,25 @@ export const TableMainBlock = () => {
     <div className="table-container">
       <div className="table-header">
         <h4 className="table-title">Best Alabama School - Summer 2025</h4>
-        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%'}}>
-        <div className="timer-container">
-          <span className="timer-text">
-            {timerComponents.length ? timerComponents : "Time's up!"}
-          </span>
-        </div>
-        <div className="loader">
-          <div
-            className="progress"
-            style={{ width: `${progressPercentage}%` }}
-          />
-        </div>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            width: '100%',
+          }}
+        >
+          <div className="timer-container">
+            <span className="timer-text">
+              {timerComponents.length ? timerComponents : "Time's up!"}
+            </span>
+          </div>
+          <div className="loader">
+            <div
+              className="progress"
+              style={{ width: `${progressPercentage}%` }}
+            />
+          </div>
         </div>
       </div>
 
